@@ -1,0 +1,48 @@
+[gd_scene load_steps=2 format=3 uid="uid://bd0tciq0iimah"]
+
+[ext_resource type="Script" uid="uid://cv1nahvji04fc" path="res://0 Debug/background.gd" id="1_oih4v"]
+
+[node name="Playground" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="Node" parent="."]
+script = ExtResource("1_oih4v")
+
+[node name="AweeesomeDesignIPromis" type="ColorRect" parent="Background"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1215.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_group_ = true
+
+[node name="ColorRect" type="ColorRect" parent="Background/AweeesomeDesignIPromis"]
+layout_mode = 0
+offset_left = 724.0
+offset_top = 76.0
+offset_right = 987.0
+offset_bottom = 428.0
+color = Color(1, 0.227451, 1, 1)
+
+[node name="Arrows" type="Node" parent="Background"]
+
+[node name="Right" type="Button" parent="Background/Arrows"]
+offset_left = 1073.0
+offset_top = 272.0
+offset_right = 1128.0
+offset_bottom = 329.0
+
+[node name="Left" type="Button" parent="Background/Arrows"]
+offset_left = 31.0
+offset_top = 270.0
+offset_right = 86.0
+offset_bottom = 327.0
+
+[connection signal="pressed" from="Background/Arrows/Right" to="Background" method="_on_right_pressed"]
+[connection signal="pressed" from="Background/Arrows/Left" to="Background" method="_on_left_pressed"]
