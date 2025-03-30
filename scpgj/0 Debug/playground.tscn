@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://bd0tciq0iimah"]
+[gd_scene load_steps=3 format=3 uid="uid://bd0tciq0iimah"]
 
-[ext_resource type="Script" uid="uid://cv1nahvji04fc" path="res://0 Debug/background.gd" id="1_oih4v"]
+[ext_resource type="Script" uid="uid://cv1nahvji04fc" path="res://0 Debug/Scripts/background.gd" id="1_oih4v"]
+[ext_resource type="Script" uid="uid://bw34jmca44oky" path="res://0 Debug/Scripts/aweeesome_design_i_promis.gd" id="2_6wb4p"]
 
 [node name="Playground" type="Control"]
 layout_mode = 3
@@ -17,10 +18,10 @@ script = ExtResource("1_oih4v")
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_right = 1215.0
+offset_right = 2179.0
 grow_horizontal = 2
 grow_vertical = 2
-metadata/_edit_group_ = true
+script = ExtResource("2_6wb4p")
 
 [node name="ColorRect" type="ColorRect" parent="Background/AweeesomeDesignIPromis"]
 layout_mode = 0
@@ -29,6 +30,14 @@ offset_top = 76.0
 offset_right = 987.0
 offset_bottom = 428.0
 color = Color(1, 0.227451, 1, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="Background/AweeesomeDesignIPromis"]
+layout_mode = 0
+offset_left = 1486.0
+offset_top = 136.0
+offset_right = 1986.0
+offset_bottom = 243.0
+color = Color(0.0705882, 0.47451, 1, 1)
 
 [node name="Arrows" type="Node" parent="Background"]
 
