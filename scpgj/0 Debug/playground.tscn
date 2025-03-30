@@ -53,5 +53,7 @@ offset_top = 270.0
 offset_right = 86.0
 offset_bottom = 327.0
 
+[node name="InteractionHandler" type="Node" parent="."]
+
 [connection signal="pressed" from="Background/Arrows/Right" to="Background" method="_on_right_pressed"]
 [connection signal="pressed" from="Background/Arrows/Left" to="Background" method="_on_left_pressed"]
