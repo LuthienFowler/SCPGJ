@@ -5,4 +5,6 @@
 [node name="Interactable" type="Node2D"]
 script = ExtResource("1_rfafa")
 
-[node name="Buttons" type="Node" parent="."]
+[node name="Areas" type="Area2D" parent="."]
+
+[connection signal="input_event" from="Areas" to="." method="_on_areas_input_event"]
