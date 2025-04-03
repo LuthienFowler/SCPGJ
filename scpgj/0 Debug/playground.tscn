@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://bd0tciq0iimah"]
+[gd_scene load_steps=5 format=3 uid="uid://bd0tciq0iimah"]
 
 [ext_resource type="Script" uid="uid://cv1nahvji04fc" path="res://0 Debug/Scripts/background.gd" id="1_oih4v"]
 [ext_resource type="Script" uid="uid://bw34jmca44oky" path="res://0 Debug/Scripts/aweeesome_design_i_promis.gd" id="2_6wb4p"]
 [ext_resource type="PackedScene" uid="uid://cfebtdg4jh1h0" path="res://0 Debug/Interactables/pink_square.tscn" id="3_tfnhy"]
+[ext_resource type="Script" uid="uid://cl37fe32lf4gd" path="res://0 Debug/Scripts/interaction_handler.gd" id="4_0gbhn"]
 
 [node name="Playground" type="Control"]
 layout_mode = 3
@@ -11,6 +12,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 
 [node name="Background" type="Node" parent="."]
 script = ExtResource("1_oih4v")
@@ -22,6 +24,7 @@ anchor_bottom = 1.0
 offset_right = 2179.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 script = ExtResource("2_6wb4p")
 
 [node name="PinkSquare" parent="Background/AweeesomeDesignIPromis" instance=ExtResource("3_tfnhy")]
@@ -50,6 +53,7 @@ offset_right = 86.0
 offset_bottom = 327.0
 
 [node name="InteractionHandler" type="Node" parent="."]
+script = ExtResource("4_0gbhn")
 
 [connection signal="pressed" from="Background/Arrows/Right" to="Background" method="_on_right_pressed"]
 [connection signal="pressed" from="Background/Arrows/Left" to="Background" method="_on_left_pressed"]

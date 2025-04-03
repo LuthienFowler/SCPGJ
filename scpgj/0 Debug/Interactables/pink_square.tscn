@@ -6,7 +6,7 @@
 size = Vector2(263, 352)
 
 [node name="PinkSquare" instance=ExtResource("1_k1ms4")]
-interactable_name = " Pink Square"
+interactable_name = "Pink Square"
 
 [node name="ColorRect" type="ColorRect" parent="." index="0"]
 offset_right = 263.0
