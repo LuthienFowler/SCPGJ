@@ -5,4 +5,4 @@ func _ready() -> void:
 
 func interacted(interactable_name) -> void:
 	if interactable_name == "Pink Square":
-		print("You interacted with the pink square!")
+		Interactions.run_dialogue("PinkSquare1")

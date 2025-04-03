@@ -18,11 +18,14 @@ config/features=PackedStringArray("4.4", "Forward Plus")
 Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 StoryBeats="*res://1 Autoload/story_beats.gd"
 Interactions="*res://1 Autoload/interactions.gd"
+Global="*res://1 Autoload/global.gd"
 
 [dialogic]
 
 directories/dch_directory={}
-directories/dtl_directory={}
+directories/dtl_directory={
+"PinkSquare1": "res://0 Debug/Dialogue/PinkSquare1.dtl"
+}
 
 [display]
 
