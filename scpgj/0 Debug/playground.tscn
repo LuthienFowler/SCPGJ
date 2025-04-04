@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://bd0tciq0iimah"]
+[gd_scene load_steps=7 format=3 uid="uid://bd0tciq0iimah"]
 
 [ext_resource type="Script" uid="uid://cv1nahvji04fc" path="res://0 Debug/Scripts/background.gd" id="1_oih4v"]
 [ext_resource type="Script" uid="uid://bw34jmca44oky" path="res://0 Debug/Scripts/aweeesome_design_i_promis.gd" id="2_6wb4p"]
 [ext_resource type="PackedScene" uid="uid://v6nsauy1dx7e" path="res://0 Debug/Interactables/blue_square.tscn" id="3_j1yq0"]
 [ext_resource type="PackedScene" uid="uid://cfebtdg4jh1h0" path="res://0 Debug/Interactables/pink_square.tscn" id="3_tfnhy"]
 [ext_resource type="Script" uid="uid://cl37fe32lf4gd" path="res://0 Debug/Scripts/interaction_handler.gd" id="4_0gbhn"]
+[ext_resource type="PackedScene" uid="uid://70tlg3ku4jc3" path="res://2 Menus/InGameMenu/InGameMenu.tscn" id="6_pb1bd"]
 
 [node name="Playground" type="Control"]
 layout_mode = 3
@@ -50,6 +51,10 @@ offset_bottom = 327.0
 
 [node name="InteractionHandler" type="Node" parent="."]
 script = ExtResource("4_0gbhn")
+
+[node name="InGameMenu" parent="." instance=ExtResource("6_pb1bd")]
+z_index = 100
+layout_mode = 1
 
 [connection signal="pressed" from="Background/Arrows/Right" to="Background" method="_on_right_pressed"]
 [connection signal="pressed" from="Background/Arrows/Left" to="Background" method="_on_left_pressed"]

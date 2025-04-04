@@ -5,6 +5,8 @@ extends Node
 @onready var aweeesome_design_i_promis: ColorRect = $AweeesomeDesignIPromis
 
 func _on_right_pressed() -> void:
+	if Global.current_state != Global.game_states.EXPLORE: return
+	
 	if aweeesome_design_i_promis.current_view == 1:
 		print("You went right.")
 		aweeesome_design_i_promis.current_view = 2
@@ -13,6 +15,8 @@ func _on_right_pressed() -> void:
 		print("You can't go right anymore.")
 
 func _on_left_pressed() -> void:
+	if Global.current_state != Global.game_states.EXPLORE: return
+	
 	if aweeesome_design_i_promis.current_view == 1:
 		print("You can't go left anymore.")
 	elif aweeesome_design_i_promis.current_view == 2:
