@@ -24,6 +24,7 @@ Global="*res://1 Autoload/global.gd"
 
 directories/dch_directory={}
 directories/dtl_directory={
+"BlueSquare1": "res://0 Debug/Dialogue/BlueSquare1.dtl",
 "PinkSquare1": "res://0 Debug/Dialogue/PinkSquare1.dtl"
 }
 

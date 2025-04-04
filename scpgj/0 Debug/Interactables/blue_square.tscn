@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://v6nsauy1dx7e"]
+
+[ext_resource type="PackedScene" uid="uid://coej5u3tkx2fx" path="res://1 Interactables/Base/interactable.tscn" id="1_ig5eu"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ig5eu"]
+size = Vector2(418, 94)
+
+[node name="BlueSquare" instance=ExtResource("1_ig5eu")]
+interactable_name = "Blue Square"
+
+[node name="ColorRect" type="ColorRect" parent="." index="0"]
+offset_right = 418.0
+offset_bottom = 94.0
+mouse_filter = 2
+color = Color(0, 0.588235, 1, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Areas" index="0"]
+position = Vector2(209, 47)
+shape = SubResource("RectangleShape2D_ig5eu")

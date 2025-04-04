@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://bd0tciq0iimah"]
+[gd_scene load_steps=6 format=3 uid="uid://bd0tciq0iimah"]
 
 [ext_resource type="Script" uid="uid://cv1nahvji04fc" path="res://0 Debug/Scripts/background.gd" id="1_oih4v"]
 [ext_resource type="Script" uid="uid://bw34jmca44oky" path="res://0 Debug/Scripts/aweeesome_design_i_promis.gd" id="2_6wb4p"]
+[ext_resource type="PackedScene" uid="uid://v6nsauy1dx7e" path="res://0 Debug/Interactables/blue_square.tscn" id="3_j1yq0"]
 [ext_resource type="PackedScene" uid="uid://cfebtdg4jh1h0" path="res://0 Debug/Interactables/pink_square.tscn" id="3_tfnhy"]
 [ext_resource type="Script" uid="uid://cl37fe32lf4gd" path="res://0 Debug/Scripts/interaction_handler.gd" id="4_0gbhn"]
 
@@ -27,16 +28,11 @@ grow_vertical = 2
 mouse_filter = 2
 script = ExtResource("2_6wb4p")
 
+[node name="BlueSquare" parent="Background/AweeesomeDesignIPromis" instance=ExtResource("3_j1yq0")]
+position = Vector2(1578, 130)
+
 [node name="PinkSquare" parent="Background/AweeesomeDesignIPromis" instance=ExtResource("3_tfnhy")]
 position = Vector2(580, 87)
-
-[node name="ColorRect2" type="ColorRect" parent="Background/AweeesomeDesignIPromis"]
-layout_mode = 0
-offset_left = 1486.0
-offset_top = 136.0
-offset_right = 1986.0
-offset_bottom = 243.0
-color = Color(0.0705882, 0.47451, 1, 1)
 
 [node name="Arrows" type="Node" parent="Background"]
 
