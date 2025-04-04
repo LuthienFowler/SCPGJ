@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://ditpjkqwdyfrk" path="res://2 Menus/InGameMenu/in_game_menu.gd" id="1_nu2x4"]
 
 [node name="InGameMenu" type="Control"]
+visible = false
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0

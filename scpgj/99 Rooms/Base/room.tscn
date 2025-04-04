@@ -1,0 +1,32 @@
+[gd_scene load_steps=2 format=3 uid="uid://c2thnssvt85hp"]
+
+[ext_resource type="Script" uid="uid://cv1nahvji04fc" path="res://0 Debug/Scripts/background.gd" id="1_gtk6o"]
+
+[node name="Room" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Background" type="Node" parent="."]
+script = ExtResource("1_gtk6o")
+
+[node name="Arrows" type="Node" parent="Background"]
+
+[node name="Right" type="Button" parent="Background/Arrows"]
+offset_left = 1073.0
+offset_top = 272.0
+offset_right = 1128.0
+offset_bottom = 329.0
+
+[node name="Left" type="Button" parent="Background/Arrows"]
+offset_left = 31.0
+offset_top = 270.0
+offset_right = 86.0
+offset_bottom = 327.0
+
+[connection signal="pressed" from="Background/Arrows/Right" to="Background" method="_on_right_pressed"]
+[connection signal="pressed" from="Background/Arrows/Left" to="Background" method="_on_left_pressed"]
