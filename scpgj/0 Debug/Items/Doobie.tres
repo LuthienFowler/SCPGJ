@@ -1,0 +1,9 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://n6w57n04taro"]
+
+[ext_resource type="Script" uid="uid://dnup5viaaotpl" path="res://98 Items/Base/Item.gd" id="1_5dvkg"]
+
+[resource]
+script = ExtResource("1_5dvkg")
+item_name = ""
+item_desc = ""
+metadata/_custom_type_script = "uid://dnup5viaaotpl"

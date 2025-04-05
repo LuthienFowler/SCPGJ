@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://d1qwclj3nmtfs"]
+
+[ext_resource type="Script" uid="uid://bdb7d4jn6alfd" path="res://2 Menus/Inventory/item_slot.gd" id="1_ibxqn"]
+
+[node name="ItemSlot" type="Panel"]
+custom_minimum_size = Vector2(100, 100)
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_ibxqn")
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
