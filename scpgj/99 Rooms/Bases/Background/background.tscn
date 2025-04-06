@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://lxtvmjtkun6c"]
+
+[ext_resource type="Script" uid="uid://dqy0prqiqe2yg" path="res://99 Rooms/Bases/Background/background.gd" id="1_7sbr4"]
+
+[node name="BackgroundBase" type="Sprite2D"]
+centered = false
+script = ExtResource("1_7sbr4")

@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://c2thnssvt85hp"]
+[gd_scene load_steps=3 format=3 uid="uid://c2thnssvt85hp"]
 
 [ext_resource type="Script" uid="uid://cv1nahvji04fc" path="res://0 Debug/Scripts/background.gd" id="1_gtk6o"]
+[ext_resource type="PackedScene" uid="uid://lxtvmjtkun6c" path="res://99 Rooms/Bases/Background/background.tscn" id="2_xj6py"]
 
 [node name="Room" type="Control"]
 layout_mode = 3
@@ -13,6 +14,8 @@ mouse_filter = 2
 
 [node name="Background" type="Node" parent="."]
 script = ExtResource("1_gtk6o")
+
+[node name="BackgroundBase" parent="Background" instance=ExtResource("2_xj6py")]
 
 [node name="Arrows" type="Node" parent="Background"]
 
