@@ -10,7 +10,7 @@ func _on_right_pressed() -> void:
 	
 	if background_base.current_area < background_base.number_of_areas:
 		background_base.current_area += 1
-		background_base.offset.x -= 1152
+		background_base.position.x -= 1152
 		print("Go right")
 		print(background_base.current_area)
 		
@@ -23,7 +23,7 @@ func _on_left_pressed() -> void:
 	
 	if background_base.current_area > 1:
 		background_base.current_area -= 1
-		background_base.offset.x += 1152
+		background_base.position.x += 1152
 		print("Go left")
 		print(background_base.current_area)
 		

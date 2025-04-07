@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://c2thnssvt85hp"]
+[gd_scene load_steps=4 format=3 uid="uid://c2thnssvt85hp"]
 
 [ext_resource type="Script" uid="uid://cv1nahvji04fc" path="res://0 Debug/Scripts/background.gd" id="1_gtk6o"]
 [ext_resource type="PackedScene" uid="uid://lxtvmjtkun6c" path="res://99 Rooms/Bases/Background/background.tscn" id="2_xj6py"]
+[ext_resource type="PackedScene" uid="uid://70tlg3ku4jc3" path="res://2 Menus/InGameMenu/InGameMenu.tscn" id="3_mg41u"]
 
 [node name="Room" type="Control"]
 layout_mode = 3
@@ -30,6 +31,12 @@ offset_left = 31.0
 offset_top = 270.0
 offset_right = 86.0
 offset_bottom = 327.0
+
+[node name="InteractionHandler" type="Node" parent="."]
+
+[node name="InGameMenu" parent="." instance=ExtResource("3_mg41u")]
+top_level = true
+layout_mode = 1
 
 [connection signal="pressed" from="Background/Arrows/Right" to="Background" method="_on_right_pressed"]
 [connection signal="pressed" from="Background/Arrows/Left" to="Background" method="_on_left_pressed"]
