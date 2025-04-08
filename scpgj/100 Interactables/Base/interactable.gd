@@ -1,7 +1,7 @@
 extends Node2D
 class_name Interactable
 
-@export var interactable_name = " "
+@export var interactable_name = ""
 
 
 func _on_areas_input_event(viewport: Node, event: InputEvent, shape_idx: int) -> void:

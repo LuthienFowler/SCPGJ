@@ -1,7 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://dgp5ff17p15cf"]
+[gd_scene load_steps=6 format=3 uid="uid://dgp5ff17p15cf"]
 
 [ext_resource type="PackedScene" uid="uid://c2thnssvt85hp" path="res://99 Rooms/Bases/room.tscn" id="1_kf3dw"]
 [ext_resource type="Texture2D" uid="uid://dqd6mrs72fniq" path="res://101 Assets/Rooms/Backgrounds/TrainTracksFirstPass.png" id="2_rl3vm"]
+[ext_resource type="PackedScene" uid="uid://1wh3kx8kyvaj" path="res://100 Interactables/Train Tracks/Door/door_front.tscn" id="3_vg8ms"]
+[ext_resource type="PackedScene" uid="uid://c6guv3r3sq5kp" path="res://100 Interactables/Train Tracks/Door/door_side.tscn" id="4_lctkc"]
+[ext_resource type="Script" uid="uid://btujbqxle6poa" path="res://99 Rooms/TrainTracks/interaction_handler.gd" id="5_xxqqs"]
 
 [node name="TrainTracks" instance=ExtResource("1_kf3dw")]
 
@@ -9,3 +12,12 @@
 texture = ExtResource("2_rl3vm")
 number_of_areas = 4
 repeating = true
+
+[node name="door_front" parent="Background/BackgroundBase" index="0" instance=ExtResource("3_vg8ms")]
+position = Vector2(1321, 54)
+
+[node name="door_side" parent="Background/BackgroundBase" index="1" instance=ExtResource("4_lctkc")]
+position = Vector2(692, 277)
+
+[node name="InteractionHandler" parent="." index="1"]
+script = ExtResource("5_xxqqs")

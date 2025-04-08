@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://c6guv3r3sq5kp"]
+
+[ext_resource type="PackedScene" uid="uid://coej5u3tkx2fx" path="res://100 Interactables/Base/interactable.tscn" id="1_xkc37"]
+
+[node name="door_side" instance=ExtResource("1_xkc37")]
+interactable_name = "door"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Areas" index="0"]
+polygon = PackedVector2Array(0, 0, 85, -42, 88, 220, 43, 222, 43, 254, 3, 233)
