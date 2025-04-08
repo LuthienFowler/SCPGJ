@@ -14,8 +14,13 @@ func _on_right_pressed() -> void:
 		print("Go right")
 		print(background_base.current_area)
 		
-	elif background_base.current_area == background_base.number_of_areas:
+	elif background_base.current_area == background_base.number_of_areas and background_base.repeating == false:
 		print("You cant go right anymore!")
+		
+	elif background_base.current_area == background_base.number_of_areas and background_base.repeating == true:
+		print("background repeated")
+		background_base.position.x = 0
+		background_base.current_area = 1
 	
 
 func _on_left_pressed() -> void:
@@ -27,6 +32,10 @@ func _on_left_pressed() -> void:
 		print("Go left")
 		print(background_base.current_area)
 		
-	elif background_base.current_area == 1:
+	elif background_base.current_area == 1 and background_base.repeating == false:
 		print("You cant go left anymore!")
+	elif background_base.current_area == 1 and background_base.repeating == true:
+		print("background repeated")
+		background_base.position.x = ((background_base.number_of_areas - 1) * 1152) * -1
+		background_base.current_area = 4
 		

@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://dgp5ff17p15cf"]
+
+[ext_resource type="PackedScene" uid="uid://c2thnssvt85hp" path="res://99 Rooms/Bases/room.tscn" id="1_kf3dw"]
+[ext_resource type="Texture2D" uid="uid://dqd6mrs72fniq" path="res://101 Assets/Rooms/Backgrounds/TrainTracksFirstPass.png" id="2_rl3vm"]
+
+[node name="TrainTracks" instance=ExtResource("1_kf3dw")]
+
+[node name="BackgroundBase" parent="Background" index="0"]
+texture = ExtResource("2_rl3vm")
+number_of_areas = 4
+repeating = true
