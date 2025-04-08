@@ -1,0 +1,6 @@
+[signal arg="start"]
+It's a door.
+On the sign, there's writing you don't understand.
+You try to open it.
+It seems to be locked.
+[signal arg="end"]

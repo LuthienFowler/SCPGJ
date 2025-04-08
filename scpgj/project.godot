@@ -25,7 +25,9 @@ Global="*res://1 Autoload/global.gd"
 directories/dch_directory={}
 directories/dtl_directory={
 "BlueSquare1": "res://0 Debug/Dialogue/BlueSquare1.dtl",
-"PinkSquare1": "res://0 Debug/Dialogue/PinkSquare1.dtl"
+"PinkSquare1": "res://0 Debug/Dialogue/PinkSquare1.dtl",
+"door_1": "res://97 Dialogue/Timelines/Train Tracks/Door/door_1.dtl",
+"door_2": "res://97 Dialogue/Timelines/Train Tracks/Door/door_2.dtl"
 }
 
 [display]
@@ -45,6 +47,7 @@ folder_colors={
 "res://100 Interactables/": "teal",
 "res://101 Assets/": "blue",
 "res://2 Menus/": "orange",
+"res://97 Dialogue/": "purple",
 "res://98 Items/": "yellow",
 "res://99 Rooms/": "green",
 "res://addons/": "gray"
